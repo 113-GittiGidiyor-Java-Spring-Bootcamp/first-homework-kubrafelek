@@ -61,6 +61,7 @@ public class Instructor {
         this.courseList = courseList;
     }
 
+    //Yalnızca unique olanların equalsının yazılması daha doğrudur
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

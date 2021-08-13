@@ -2,6 +2,7 @@ package dev.models;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
 
@@ -61,6 +62,15 @@ public class Course {
     public void setStudentList(List<Student> studentList) {
         this.studentList = studentList;
     }
+
+    public  Instructor getInstructor() {
+        return instructor;
+    }
+
+    public void setInstructor(Instructor instructor) {
+        this.instructor = instructor;
+    }
+
 
     @Override
     public boolean equals(Object o) {
